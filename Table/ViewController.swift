@@ -25,6 +25,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return alumnos.count
     }
     
+    
+    @IBAction func addButton(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Nuevo contacto", message: "Agregar", preferredStyle: .alert)
+        
+        //crear textfield
+        alert.addTextField{
+            nombreAlerta in
+            nombreAlerta.placeholder="Escribe un nuevo alumno"
+            
+        }
+        
+        let accionAceptar = UIAlertAction(title: "Aceptar", style: .default){ _ in
+            print("Alumno agregado")
+        }
+        
+        alert.addAction(accionAceptar)
+        present(alert, animated: true, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableItems.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         celda.textLabel?.text = alumnos[indexPath.row]

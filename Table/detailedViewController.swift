@@ -13,7 +13,7 @@ class detailedViewController: UIViewController {
     var recibirNombre: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblNombre.text=recibirNombre
+        lblNombre.text=recibirNombre ?? ""
 
         // Do any additional setup after loading the view.
     }

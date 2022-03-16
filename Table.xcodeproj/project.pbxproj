@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D14D9727E23824009DBC9D /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D14D9627E23824009DBC9D /* Alumno.swift */; };
 		48E06FE927DF92F0002A5426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FE827DF92F0002A5426 /* AppDelegate.swift */; };
 		48E06FEB27DF92F0002A5426 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FEA27DF92F0002A5426 /* SceneDelegate.swift */; };
 		48E06FED27DF92F0002A5426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E06FEC27DF92F0002A5426 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48D14D9627E23824009DBC9D /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		48E06FE527DF92F0002A5426 /* Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Table.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E06FE827DF92F0002A5426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E06FEA27DF92F0002A5426 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				48E06FF327DF92F3002A5426 /* LaunchScreen.storyboard */,
 				48E06FF627DF92F3002A5426 /* Info.plist */,
 				48E06FFD27DF9919002A5426 /* detailedViewController.swift */,
+				48D14D9627E23824009DBC9D /* Alumno.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E06FED27DF92F0002A5426 /* ViewController.swift in Sources */,
+				48D14D9727E23824009DBC9D /* Alumno.swift in Sources */,
 				48E06FE927DF92F0002A5426 /* AppDelegate.swift in Sources */,
 				48E06FFE27DF9919002A5426 /* detailedViewController.swift in Sources */,
 				48E06FEB27DF92F0002A5426 /* SceneDelegate.swift in Sources */,

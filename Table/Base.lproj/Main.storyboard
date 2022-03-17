@@ -84,26 +84,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre alumno:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-l8-vFb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre alumno:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-l8-vFb">
                                 <rect key="frame" x="118" y="135" width="178" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzk-g5-gQF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzk-g5-gQF">
                                 <rect key="frame" x="186" y="257" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5z-Ed-p8J">
+                                <rect key="frame" x="87" y="498" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nQP-Nj-dAw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DkG-Jm-ph7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kzk-g5-gQF" firstAttribute="top" secondItem="GaD-l8-vFb" secondAttribute="bottom" constant="92" id="6AQ-hA-l0P"/>
+                            <constraint firstItem="DkG-Jm-ph7" firstAttribute="bottom" secondItem="Z5z-Ed-p8J" secondAttribute="bottom" constant="236" id="8Gi-Qz-QYq"/>
+                            <constraint firstItem="Z5z-Ed-p8J" firstAttribute="leading" secondItem="DkG-Jm-ph7" secondAttribute="leading" constant="87" id="AVT-Mf-PyP"/>
+                            <constraint firstItem="Z5z-Ed-p8J" firstAttribute="centerX" secondItem="GaD-l8-vFb" secondAttribute="centerX" id="RT4-iJ-tNI"/>
+                            <constraint firstItem="Z5z-Ed-p8J" firstAttribute="centerX" secondItem="Kzk-g5-gQF" secondAttribute="centerX" id="XZK-dN-S4e"/>
+                            <constraint firstItem="Z5z-Ed-p8J" firstAttribute="centerX" secondItem="1dN-2n-hxB" secondAttribute="centerX" id="exb-6P-NwY"/>
+                            <constraint firstItem="Kzk-g5-gQF" firstAttribute="top" secondItem="1dN-2n-hxB" secondAttribute="top" constant="257" id="y2L-fF-H3w"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UuC-VK-AaK"/>
                     <connections>
+                        <outlet property="imgCalificacion" destination="Z5z-Ed-p8J" id="b4l-oc-FaY"/>
                         <outlet property="lblCalificacion" destination="Kzk-g5-gQF" id="0iI-JC-GYG"/>
                         <outlet property="lblNombre" destination="GaD-l8-vFb" id="yI2-Ww-a9R"/>
                     </connections>
@@ -133,12 +147,6 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

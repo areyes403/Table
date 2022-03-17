@@ -11,7 +11,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableItems: UITableView!
     var nombre:String?
-    var calificacion:String?
+    
+    var calificacion:Int?
     
     var alumnoSeleccionado: String?
     
@@ -71,8 +72,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableItems.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
         celda.textLabel?.text = alumnos[indexPath.row].nombre
-        var cali=alumnos[indexPath.row].calificacion
-        celda.detailTextLabel?.text = "Calificacion :"
+        let cali=alumnos[indexPath.row].calificacion
+        celda.detailTextLabel?.text = "Calificacion :"+String(cali)
         return celda
     }
     
@@ -90,6 +91,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(alumnos[indexPath.row])
         nombre=alumnos[indexPath.row].nombre
+        calificacion=alumnos[indexPath.row].calificacion
         alumnoSeleccionado = alumnos[indexPath.row].nombre
     
         //Enviar datos a segunda view
@@ -101,7 +103,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "enviarNombre"{
             let objDestino=segue.destination as! detailedViewController
             objDestino.recibirNombre = nombre
-            
+            objDestino.recibirCalificacion=calificacion
         }
         
     }

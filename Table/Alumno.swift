@@ -8,6 +8,6 @@
 import Foundation
 
 struct Alumno {
-    let nombre: String?
-    let calificacion: Int?
+    let nombre: String
+    let calificacion: Int
 }
